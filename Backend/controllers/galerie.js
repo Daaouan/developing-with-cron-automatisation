@@ -1,7 +1,7 @@
 const Galerie = require('../models/Galerie');
 
 const fs = require('fs');  
-
+//changing to see the changes after cron automatisation
 exports.createGalerie = (req, res, next) => {
    const galerieObject = req.body;
     delete galerieObject._id;

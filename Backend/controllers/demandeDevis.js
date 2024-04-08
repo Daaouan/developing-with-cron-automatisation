@@ -13,7 +13,7 @@ exports.createDemandeDevis = (req, res, next) => {
         .catch(error => { res.status(400).json({ error }) })
     console.log(demandeDevisObject);
 };
-
+//test changing 
 exports.getAllDemandeDevis = (req, res, next) => { //La première différence que vous remarquerez est l'argument supplémentaire passé à la méthode use : nous lui passons un string, correspondant à la route d'API (aussi appelée endpoint)  pour laquelle nous souhaitons enregistrer cet élément de middleware. Dans ce cas, cette route sera http://localhost:3000/api/stuff (voir app.js), car il s'agit de l'URL demandée par l'application front-end.
     DemandeDevis.find()
         .then(demandeDevis => res.status(200).json(demandeDevis))
